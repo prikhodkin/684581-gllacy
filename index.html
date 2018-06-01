@@ -10,7 +10,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
-				<img src="#img/Logo.png" alt="logo" width="154" height="64">
+				<img src="#img/logo.png" alt="logo" width="154" height="64">
 			</a>
 			<ul class="site-navigation">
 				<li class="sub-catalog-menu-hover">
@@ -92,13 +92,13 @@
 		</section>
 
 		<section class="sale">
-			<ul class="sale-item">
-				<li class="sale-item1">
+			<ul class="sale-list">
+				<li class="sale-item raspberry">
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a href="#" class="btn-sale-item">Хочу варенье!</a>
 				</li>
-				<li class="sale-item2">
+				<li class="sale-item chocolate">
 					<h3>Шоколадки даром!</h3>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a href="#" class="btn-sale-item">Хочу шоколадки!</a>
@@ -112,7 +112,7 @@
 					<div class="catalog-item">
 						<div class="hit"></div><!--Вставить хит через CSS-->
 						<img src="#img/1.png" alt="Сливочное с апельсиновым джемом" width="267" height="267">
-						<p class="price">310</p><span><img src="#img/Р.png" alt="Руб." width="30" height="35"></span><span>/кг</span>
+						<p class="price">310<img src="#img/p.png" alt="руб." width="30" height="35"><span>/кг</span></p>
 						<a class="catalog-item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</div>
 				</li>
@@ -120,7 +120,7 @@
 					<div class="catalog-item">
 						<div class="hit"></div><!--Вставить хит через CSS-->
 						<img src="#img/2.png" alt="Сливочно-кофейное" width="267" height="267">
-						<p class="price">380</p><span><img src="#img/Р.png" alt="Руб." width="30" height="35"></span><span>/кг</span>
+						<p class="price">380<img src="#img/p.png" alt="руб." width="30" height="35"><span>/кг</span></p>
 						<a class="catalog-item-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</div>
 				</li>
@@ -128,7 +128,7 @@
 					<div class="catalog-item">
 						<div class="hit"></div><!--Вставить хит через CSS-->
 						<img src="#img/3.png" alt="Сливочно-клубничное" width="267" height="267">
-						<p class="price">355</p><span><img src="#img/Р.png" alt="Руб." width="30" height="35"></span><span>/кг</span>
+						<p class="price">355<img src="#img/p.png" alt="Руб." width="30" height="35"><span>/кг</span></p>
 						<a class="catalog-item-link" href="#">Сливочно-клубничное с присыпкой из белого шоколад</a>
 					</div>
 				</li>
@@ -136,7 +136,7 @@
 					<div class="catalog-item">
 						<div class="hit"></div><!--Вставить хит через CSS-->
 						<img src="#img/4.png" alt="Сливочное крем-брюле" width="267" height="267">
-						<p class="price">415</p><span><img src="#img/Р.png" alt="Руб." width="30" height="35"></span><span>/кг</span>
+						<p class="price">415<img src="#img/p.png" alt="Руб." width="30" height="35"><span>/кг</span></p>
 						<a class="catalog-item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</div>
 				</li>			
@@ -161,28 +161,27 @@
 			</ul>
 		</section>
 
-		<article class="news-blog">
-			<p>Новое в нашем блоге</p>
-			<a href="#"><p>10 способов сервировки фруктовых щербетов к столу</p></a>
-		</article>
-
-		<section class="dispatch">
-			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-			<!--Вставить форму e-mail -->
-			<button class="btn-dispatch" type="button">Отправить</button>
+		<section class="news-blog-dispatch">
+			<ul class="news-blog-dispatch-list">
+				<li class="news-blog-dispatch-item news-blog-item">
+					<p>Новое в нашем блоге</p>
+					<a href="#"><p>10 способов сервировки фруктовых щербетов к столу</p></a>
+				</li>
+				<li class="news-blog-dispatch-item dispatch-item">				
+					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+					<!--Вставить форму e-mail -->
+					<button class="btn-dispatch" type="button">Отправить</button>
+				</li>
+			</ul>
 		</section>
 
 		<section class="map">
 			<img src="#" alt="Карта">
-			<div class="pin"></div><!--Вставить пин через CSS-->
 			<div class="adress">
-				<p>Адрес главного офиса <br>
-              	и офлайн-магазина:</p>
-              	<p><b>ул. Большая Конюшенная <br>
-              	19/8, Санкт-Петербург</b></p>
+				<p>Адрес главного офиса и офлайн-магазина:</p>
+              	<p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
               	<p>Для заказа по телефону:</p>
-              	<p><b>8 812 450-25-25</b><br>
-              	(с 10 до 20 ежедневно)</p>
+              	<p><b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
               	<a href="#" class="btn-map">Форма обратной связи</a>
 			</div>
 		</section>
@@ -213,7 +212,7 @@
 		</section>
 
 		<ul class="footer-menu">
-			<li id="footer-menu-item">
+			<li class="footer-menu-item">
 				<a href="#"><span>Для поставщиков</span></a>
 			</li>
 			<li>
