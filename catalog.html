@@ -45,22 +45,35 @@
 		<div class="user-wrapper">
 			<div class="user-search">
 				<a class="btn-user-wrapper" href="#"><span class="visually-hidden">Поиск</span></a>
-				<!-- Добавить форму поиска -->
+				<div class="user-serach-form">
+					<form action="#" method="post">
+						<label class="visually-hidden" for="user-search-item">Что ищем?</label>
+						<input type="search" name="user-search-item" placeholder="Что ищем?">
+						<button class="visually-hidden" type="submit">Отправить</button>
+					</form>
+				</div>
 			</div>
 			<div class="user-login">
 				<a class="btn-user-wrapper" href="#"><span>Вход</span></a>
-				<!-- Добавить форму входа -->
-				<div class="user-login-popup">
-					<ul>
-						<li>
-							<a href="#">Забыли пароль?</a>
-						</li>
-						<li>
-							<a href="#">Новая регистрация</a>
-						</li>
-					</ul>
-					<button type="button">Войти</button>
-				</div>
+				<section class="user-login-form">
+					<form action="#" method="post">
+						<label for="email" class="visually-hidden">E-mail</label>
+							<input type="email" name="email" placeholder="Электронная почта">
+             		   	<label for="password" class="visually-hidden">Пароль</label>
+             		   		<input type="password" name="password" placeholder="Пароль">
+						<div class="user-login-popup">
+							<ul>
+								<li>
+									<a href="#">Забыли пароль?</a>
+								</li>
+								<li>
+									<a href="#">Новая регистрация</a>
+								</li>
+							</ul>
+							<a href="#" class="btn-user-enter">Войти</a>
+						</div>
+					</form>
+				</section>
 			</div>
 			<div class="user-cart">
 				<a class="btn-user-wrapper" href="#"><span>2 товара</span></a>
@@ -70,7 +83,7 @@
 						<tr>
 							<td class="cart-delete">
 								<button type="button" name="delete">
-									<span class="cart-delete-item">X</span>
+									<span class="cart-delete-item">Закрыть</span>
 								</button>
 							</td>
 							<td class="cart-img">
@@ -95,7 +108,7 @@
 						<tr>
 							<td class="cart-delete">
 								<button type="button" name="delete">
-									<span class="cart-delete-item">X</span>
+									<span class="cart-delete-item">Закрыть</span>
 								</button>
 							</td>
 							<td class="cart-img">
@@ -138,34 +151,56 @@
 		</nav>
 		<h1>Сливочное мороженое</h1>
 		<section class="filter">
-			<p>Сортировка:</p>
-			<ul class="filter-sorting">
-				<li>по популярности</li>
-				<li>сначала недорогие</li>
-				<li>сначала дорогие</li>
-				<li>по жирности</li>
-			</ul>
-			<p>Цена:</p>
-			<ul class="filter-price">
-				<li>200 руб.</li>
-				<li>500 руб.</li>
-			</ul>
-			<p>Жирность:</p>
-			<ul class="filter-fat_content">
-				<li>0%</li>
-				<li>до 10%</li>
-				<li>до 30%</li>
-				<li>выше 30%</li>
-			</ul>
-			<p>Наполнители:</p>
-			<ul class="filter-fillers">
-				<li>шоколадные</li>
-				<li>сахарные присыпки</li>
-				<li>фрукты</li>
-				<li>сиропы</li>
-				<li>джемы</li>
-			</ul>
-			<button type="button" class="btn-filter">Применить</button>
+			<form action="#" class="sorting" method="post">
+         		<div class="sorting-select">
+            		<p>Сортировка:</p>
+              		<select  name="catalog-select-sorting">
+               			<option value="popular">по популярности</option>
+               			<option value="cheap">сначала недорогие</option>
+                		<option value="rich">сначала дорогие</option>
+                		<option value="calories">по жирности</option>
+             		 </select> 	
+         		</div>
+				<p>Цена:</p>
+				<ul class="filter-price">
+					<li>200 руб.</li>
+					<li>500 руб.</li>
+				</ul>
+				<div class="sorting-radio">
+					<p>Жирность:</p>
+					<label>
+						<input type="radio" name="radio-button" value="0">0%
+					</label>
+					<label>
+						<input type="radio" name="radio-button" value="10" checked="">до 10%
+					</label>
+					<label>
+						<input type="radio" name="radio-button" value="30">до 30%
+					</label>
+					<label>
+						<input type="radio" name="radio-button" value="30">выше 30%
+					</label>
+				</div>
+				<div class="sorting-filleers">
+					<p>Наполнители:</p>
+					<label>
+						<input type="checkbox" name="chocolate">шоколадные
+					</label>
+					<label>
+						<input type="checkbox" name="sugar" checked="">сахарные присыпки
+					</label>
+					<label>
+						<input type="checkbox" name="fruit">фрукты
+					</label>
+					<label>
+						<input type="checkbox" name="syrup">сиропы
+					</label>
+					<label>
+						<input type="checkbox" name="jam">джемы
+					</label>
+				</div>
+				<button type="submit" class="btn-filter">Применить</button>
+			</form>
 		</section>
 
 		<section class="catalog">
