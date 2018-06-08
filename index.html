@@ -45,22 +45,35 @@
 		<div class="user-wrapper">
 			<div class="user-search">	
 				<a class="btn-user-wrapper" href="#"><span class="visually-hidden">Поиск</span></a>
-				<!-- Добавить форму поиска -->
+				<section class="user-serach-form">
+					<form action="#" method="post">
+						<label class="visually-hidden" for="user-search-item">Что ищем?</label>
+						<input type="search" name="user-search-item" placeholder="Что ищем?">
+						<button class="visually-hidden" type="submit">Отправить</button>
+					</form>
+				</section>
 			</div>
 			<div class="user-login">
 				<a class="btn-user-wrapper" href="#"><span>Вход</span></a>
-				<!-- Добавить форму входа -->
-				<div class="user-login-popup">
-					<ul>
-						<li>
-							<a href="#">Забыли пароль?</a>
-						</li>
-						<li>
-							<a href="#">Новая регистрация</a>
-						</li>
-					</ul>
-					<button type="button">Войти</button>
-				</div>
+				<section class="user-login-form">
+					<form action="#" method="post">
+						<label for="email" class="visually-hidden">E-mail</label>
+							<input type="email" name="email" placeholder="Электронная почта">
+             		   	<label for="password" class="visually-hidden">Пароль</label>
+             		   		<input type="password" name="password" placeholder="Пароль">
+						<div class="user-login-popup">
+							<ul>
+								<li>
+									<a href="#">Забыли пароль?</a>
+								</li>
+								<li>
+									<a href="#">Новая регистрация</a>
+								</li>
+							</ul>
+							<a href="#" class="btn-user-enter">Войти</a>
+						</div>
+					</form>
+				</section>
 			</div>
 			<div class="user-cart">
 				<a class="btn-user-wrapper" href="#"><span>Пусто</span></a>
@@ -169,8 +182,11 @@
 				</li>
 				<li class="news-blog-dispatch-item dispatch-item">				
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<!--Вставить форму e-mail -->
-					<button class="btn-dispatch" type="button">Отправить</button>
+					<form action="#" class="dispatch-form" method="post">
+						<label for="dispatch-form-email" class="visually-hidden">E-mail</label>
+						<input type="email" name="dispatch-form-email" placeholder="Электронная почта">
+						<button class="btn-dispatch" type="submit">Отправить</button>
+					</form>
 				</li>
 			</ul>
 		</section>
@@ -188,9 +204,22 @@
 		
 		<section class="feedback">
 			<h3>Мы обязательно вам ответим!</h3>
-			<!--Вставить форму обратной связи -->
-			<button class="btn-feedback" type="button">Отправить</button>
-			<button class="btn-feedback-close" type="button">X</button>
+			<form class="feedback-form" action="#" method="post">
+				<span class="feedback-name">
+					<label class="visually-hidden" for="feedback-form-name">Как вас зовут?</label>
+					<input type="text" name="feedback-form-name" placeholder="Как вас зовут?">
+				</span>
+				<span class="feedback-email">
+					<label class="visually-hidden" for="feedback-form-email">Ваша почта для ответа</label>
+					<input type="email" name="feedback-form-email" placeholder="Ваша почта для ответа">	
+				</span>
+				<span class="feedback-text">
+					<label class="visually-hidden" for="feedback-form-text">Напишите что-нибудь...</label>
+					<textarea name="feedback-form-text" id="feedback-form-text" placeholder="Напишите что-нибудь..."></textarea>
+				</span>
+				<button class="btn-feedback" type="submit">Отправить</button>
+				<button class="btn-feedback-close" type="button">Закрыть</button>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer">
