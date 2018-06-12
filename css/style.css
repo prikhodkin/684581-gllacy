@@ -81,9 +81,46 @@ a {
 	line-height: 16px;
 }
 
-input[type="search"],
-input[type="email"],
-input[type="password"] {
+.user-cart-popup {
+	background-color: #f8f7f4;
+}
+
+.cart-name {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #323232;
+}
+
+.cart-weight,
+.cart-x,
+.cart-weight-price,
+.cart-price {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #323232;
+}
+
+.cart-weight-price {
+	color: #999999;
+}
+
+.user-cart-popup p {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #323232;
+}
+
+.btn-cart {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	background-color: #f06441;
+}
+
+.form-control {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -198,7 +235,7 @@ input[type="password"] {
 
 .seo-titul {
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 30px;
 	color: #323232;
 }
@@ -371,5 +408,80 @@ input[type="password"] {
 .footer-copyright {
 	font-size: 12px;
 	font-weight: 400;
+	line-height: 18px;
+}
+
+/* Catalog */
+
+.catalog-menu {
+	list-style: none;
+}
+
+.catalog-menu li {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.catalog-menu a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.h1-catalog {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 41px;
+}
+
+.sorting p {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.filter-price {
+	list-style: none;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.sorting-control {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-filter {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cart-full {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	color: #323232;
+}
+
+.btn-catalog {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	background-color: #f16743;
+}
+
+.page-navigation-list {
+	list-style: none;
+}
+
+.page-navigation-list a {
+	font-size: 16px;
+	font-weight: 500;
 	line-height: 18px;
 }
