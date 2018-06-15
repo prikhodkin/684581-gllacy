@@ -21,6 +21,12 @@ a {
 	color: #ffffff;
 }
 
+.container {
+	padding: 0 27px;
+	margin: 0 auto;
+	width: 1146px;
+}
+
 .site-navigation,
 .sub-catalog-menu{
 	list-style: none;
@@ -79,6 +85,7 @@ a {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
+	background-color: rgba(255, 255, 255, 0.2)
 }
 
 .user-cart-popup {
@@ -143,6 +150,10 @@ a {
 	font-weight: 700;
 	line-height: 24px;
 	background-color: #eb563b;
+}
+
+.btn-user-wrapper {
+
 }
 
 .mode p {
@@ -249,7 +260,7 @@ a {
 
 .seo {
 	background-image: url(../img/wafer.jpg);
-	background-repeat: no-repeat;
+	
 	background-color: #efe3cb;
 }
 
@@ -300,6 +311,13 @@ a {
 
 .adress {
 	background-color: #fffffe;
+}
+
+.map img {
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .adress p {
@@ -484,4 +502,208 @@ a {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+}
+
+/* Сетка */
+
+.sub-catalog-menu {
+	display: none;
+}
+
+.header-wrapper {
+	display: flex;
+}
+
+.main-navigation {
+	display: flex;
+	width: 560px;
+}
+
+.site-navigation {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	min-width: 350px;
+	justify-content: space-between;
+	margin-left: 24px;
+	margin-top: 29px;
+}
+
+.main-header-logo {
+	margin-top: 9px;
+}
+
+.user-wrapper {
+	display: flex;
+	margin-left: auto;
+}
+
+.user-login {
+	margin-top: 30px;
+	margin-right: 71px;
+}
+
+.user-cart {
+	margin-top: 30px;
+	margin-right: 17px;
+}
+
+.mode {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	padding: 0;
+	margin: 0;
+	width: 170px;
+	margin-left: auto;
+}
+
+.mode p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+.slider-list {
+	display: flex;
+	width: 715px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.sale {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.sale-list {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.sale-item {
+	width: 560px;
+	height: 230px;
+}
+
+.sale-item h3,
+.sale-item p {
+	padding-left: 20px;
+	margin: 0px;
+
+}
+
+.sale-item h3 {
+	padding-top: 15px;
+}
+
+.sale-item p {
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.btn-sale-item {
+	display: flex;
+	width: 165px;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-top: 45px;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+}
+
+.btn-sale-item-chocolate {
+	width: 190px;
+
+}
+
+.catalog-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+	width: 267px;
+}
+
+.seo-feature {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.seo-feature li {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+.news-blog-dispatch-list {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+}
+
+.news-blog-dispatch-item {
+	width: 560px;
+}
+
+.user-login-popup,
+.user-login-form,
+.slide-2,
+.slide-3,
+.feedback {
+	display: none;
+}
+
+.adress {
+	display: block;
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+}
+
+.social-link ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: red;
+}
+
+.footer-menu {
+	display: flex;
+	width: 350px;
+	flex-wrap: wrap;
+	margin-left: 200px;
+}
+
+.copyright {
+	display: block;
+	width: 195px;
+	margin-left: auto;
+}
+
+.main-footer {
+	display: flex;
 }
