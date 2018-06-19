@@ -8,6 +8,10 @@
    	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
   	<div class="container">
 		<header class="main-header">
 			<div class="header-wrapper">
@@ -98,16 +102,21 @@
 		<main class="container-index">
 			<h1 class="visually-hidden">Магазин по продаже мороженого Глэйси</h1>
 			<section class="slider">
+				<div class="slider-controls">
+		            <label for="product-1">Первый</label>
+		            <label for="product-2">Второй</label>
+		            <label for="product-3">Третий</label>
+          		</div>
 				<ul class="slider-list">
-					<li class="slider-item slide-1">
+					<li class="slider-item slide" id="slide-1">
 						<h2 class="slider-item-titul">Крем-брюле и пломбир с малиновым джемом</h2>
 						<a href="#" class="slider-btn">Давайте оба!</a>
 					</li>
-					<li class="slider-item slide-2">
+					<li class="slider-item slide" id="slide-2">
 						<h2 class="slider-item-titul">Шоколадный пломбир и лимонный сорбет</h2>
 						<a href="#" class="slider-btn">Давайте оба!</a>
 					</li>
-					<li class="slider-item slide-3">
+					<li class="slider-item slide" id="slide-3">
 						<h2 class="slider-item-titul">Пломбир с помадкой и клубничный щербет</h2>
 						<a href="#" class="slider-btn">Давайте оба!</a>
 					</li>
@@ -197,12 +206,14 @@
 						</div>
 					</li>
 					<li class="news-blog-dispatch-item">				<div class="dispatch-item">
-							<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-							<form action="#" class="dispatch-form" method="post">
-								<label for="dispatch-form-email" class="visually-hidden">E-mail</label>
-								<input type="email" name="dispatch-form-email" placeholder="Электронная почта">
-								<button class="btn-dispatch" type="submit">Отправить</button>
-							</form>
+							<div class="dispatch-content">
+								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+								<form action="#" class="dispatch-form" method="post">
+									<label for="dispatch-form-email" class="visually-hidden">E-mail</label>
+									<input type="email" name="dispatch-form-email" placeholder="Электронная почта">
+									<button class="btn-dispatch" type="submit">Отправить</button>
+								</form>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -244,48 +255,55 @@
 	<div class="container">
 		<footer class="main-footer">
 			<ul class="footer-wrapper">
-			<li  class="social-link"><section>
-				<ul>
-					<li>
-						<a href="#" class="social-item social-tw">Твиттер</a>
-					</li>
-					<li>
-						<a href="#" class="social-item social-instagram">Инстаграм</a>
-					</li>
-					<li>
-						<a href="#" class="social-item social-fb">Фейсбук</a>
-					</li>
-					<li>
-						<a href="#" class="social-item social-vk">ВКонтакте</a>
-					</li>
-				</ul>
-			</section></li>
-			<li class="footer-navigation"><section>
-			<ul class="footer-menu">
-				<li class="footer-menu-item">
-					<a href="#"><span>Для поставщиков</span></a>
-				</li>
-				<li>
-					<a href="#"><span>О производстве</span></a>
-				</li>
-				<li>
-					<a href="#"><span>Наши документы</span></a>
-				</li>
-				<li>
-					<a href="#"><span> Экологические стандарты</span></a>
-				</li>
-			</ul>
-			</section></li>
-			<li class="copyright"><section>
-				<div class="footer-logo">
-					<img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="html-logo">
-				</div>
-				<div class="footer-copyright">
-					<span>Сделано в HTML Academy © 2017</span>
-				</div>
-			</section></li>
+			<li  class="social-link">
+				<section>
+					<ul>
+						<li>
+							<a href="#" class="social-item social-tw"><span class="visually-hidden">Твиттер</span></a>
+						</li>
+						<li>
+							<a href="#" class="social-item social-instagram"><span class="visually-hidden">Инстаграм</span></a>
+						</li>
+						<li>
+							<a href="#" class="social-item social-fb"><span class="visually-hidden">Фейсбук</span></a>
+						</li>
+						<li>
+							<a href="#" class="social-item social-vk"><span class="visually-hidden">ВКонтакте</span></a>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class="footer-navigation">
+				<section class="footer-navigation-item">
+					<ul class="footer-menu">
+						<li class="footer-menu-item">
+							<a href="#"><span class="item">Для поставщиков</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Наши документы</span></a>
+						</li>
+						<li>
+							<a href="#"><span>О производстве</span></a>
+						</li>
+						<li>
+							<a href="#"><span> Экологические стандарты</span></a>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class="copyright">
+				<section>
+					<div class="footer-logo">
+						<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html-logo">
+					</div>
+					<div class="footer-copyright">
+						<span>Сделано в HTML Academy © 2017</span>
+					</div>
+				</section>
+			</li>
 		</ul>	
 		</footer>
 	</div>
+</div>
   </body>
 </html>
