@@ -195,7 +195,7 @@ a {
 
 .user-login-form {
     position: absolute;
-    z-index: 10;
+    z-index: 70;
     top: 33px;
     left: -187px;
     display: none;
@@ -279,6 +279,7 @@ a {
 .btn-login {
     padding-right: 16px;
     padding-left: 44px;
+    margin-bottom: 10px;
 }
 
 .btn-login::before {
@@ -327,6 +328,7 @@ a {
     display: block;
     width: 31px;
     height: 31px;
+    margin-bottom: 10px;
     border-radius: 50%;
     background: rgba(255, 255, 255, .2) url(../img/search.svg) no-repeat;
     background-position: center center;
@@ -349,6 +351,7 @@ a {
     background-color: #f8f7f4;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
 }
+
 
 input[type='search'] {
     box-sizing: border-box;
@@ -377,7 +380,7 @@ input[type='search']:focus {
     display: flex;
     width: 170px;
     margin: 0;
-    margin-top: 19px;
+    margin-top: 9px;
     margin-left: auto;
     padding: 0;
     flex-wrap: wrap;
@@ -719,6 +722,7 @@ input[type='search']:focus {
     padding-top: 6px;
     padding-bottom: 74px;
     flex: 25% 0 0;
+    max-width: 25%;
 }
 
 .catalog-list li:hover {
@@ -992,10 +996,11 @@ input[type='search']:focus {
 
 .map {
     position: relative;
-    min-height: 430px;
+    min-height: 367px;
     margin: 0;
     margin-bottom: 16px;
     padding: 0;
+    padding-top: 63px;
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -1005,10 +1010,11 @@ input[type='search']:focus {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
     z-index: 30;
-    top: 62px;
-    left: 945px;
+
     width: 252px;
     padding: 28px 25px;
     color: #323232;
@@ -1219,6 +1225,7 @@ input[type='search']:focus {
     margin: 0;
     padding: 0 13px;
     flex: 25% 0 0;
+    max-width: 25%;
 }
 
 .social-item {
@@ -1352,6 +1359,7 @@ input[type='search']:focus {
     margin: 0;
     padding: 0 13px;
     flex: 25% 0 0;
+    max-width: 25%;
 }
 
 .copyright section {
