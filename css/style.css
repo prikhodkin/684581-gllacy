@@ -287,11 +287,13 @@ a {
     background-color: #f8f7f4;
 }
 
-.user-login:hover .btn-login::before {
+.user-login:hover .btn-login::before,
+.user-login:focus .btn-login::before  {
     background: url(../img/enter.svg) no-repeat;
 }
 
-.btn-user-wrapper.btn-login:hover {
+.btn-user-wrapper.btn-login:hover,
+.btn-user-wrapper.btn-login:focus {
     color: #000;
     background-color: #f8f7f4;
 }
@@ -312,7 +314,8 @@ a {
     background: url(../img/enterwhite.svg) no-repeat;
 }
 
-.btn-login:hover::before {
+.btn-login:hover::before,
+.btn-login:focus::before {
     background: url(../img/enter.svg) no-repeat;
 }
 
@@ -714,7 +717,7 @@ input[type='search']:focus {
 .catalog {
     margin: 0;
     margin-top: -6px;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
     padding: 0;
 }
 
@@ -742,7 +745,7 @@ input[type='search']:focus {
     box-sizing: border-box;
     margin: 0;
     margin-top: 40px;
-    margin-bottom: -74px;
+    margin-bottom: -84px;
     padding: 0 13px;
     padding-top: 6px;
     padding-bottom: 74px;
@@ -1038,8 +1041,8 @@ input[type='search']:focus {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    z-index: 30;
-
+    z-index: 50;
+    position: relative;
     width: 252px;
     padding: 28px 25px;
     color: #323232;
@@ -1104,6 +1107,16 @@ input[type='search']:focus {
     box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
 }
 
+.iframe-map {
+    position: relative;
+    height: 0;
+}
+
+.iframe-map iframe {
+    position: absolute;
+    top: -366px;
+    border: none;
+}
 
 /*feedback*/
 
@@ -1228,6 +1241,17 @@ input[type='search']:focus {
     box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
 }
 
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
 
 
 			/*footer*/
@@ -1637,6 +1661,8 @@ select:hover + .select {
     background: url(../img/radio-off.svg) no-repeat center center ;
 }
 
+
+
 .sorting-radio input[type='radio']:checked + .radio-item {
     border: none;
     background: url(../img/radio-on.svg) no-repeat center center;
@@ -1649,6 +1675,7 @@ select:hover + .select {
 .sorting-radio input[type='radio'] + .radio-item:hover {
     opacity: 1;
 }
+
 
 /*sorting-filleers*/
 
@@ -1735,7 +1762,7 @@ select:hover + .select {
 /*page-navigation*/
 
 .page-navigation {
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 20px;
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -1939,4 +1966,42 @@ select:hover + .select {
 
 
 
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
 
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
