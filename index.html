@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
    	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-   	<link rel="stylesheet" href="css/style.css">
+   	<link rel="stylesheet" href="css/min-style.css">
   </head>
   <body>
   	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -79,9 +79,9 @@
 				<h1 class="visually-hidden">Магазин по продаже мороженого Глэйси</h1>
 				<section class="slider">
 					<div class="slider-controls">
-			            <label for="product-1">Первый</label>
-			            <label for="product-2">Второй</label>
-			            <label for="product-3">Третий</label>
+			            <label for="product-1"><span class="visually-hidden">Первый</span></label>
+			            <label for="product-2"><span class="visually-hidden">Второй</span></label>
+			            <label for="product-3"><span class="visually-hidden">Третий</span></label>
 	          		</div>
 					<ul class="slider-list">
 						<li class="slider-item slide" id="slide-1">
@@ -103,7 +103,7 @@
 						<li class="sale-item">
 							<div class="raspberry">
 								<h3>Малинка даром!</h3>
-								<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+								<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</span></p>
 								<a href="#" class="button btn-sale-item">Хочу варенье!</a>
 							</div>
 						</li>
@@ -277,6 +277,6 @@
 			</footer>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
+	<script src="js/min-script.js"></script>
   </body>
 </html>
